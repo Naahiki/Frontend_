@@ -1,0 +1,83 @@
+.filter-container {
+  padding: 1.5em;
+  border-radius: 15px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.filter-types-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 450px;
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-item label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.filter-item input,
+.filter-item select {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.filter-item input::placeholder {
+  color: #aaa;
+}
+
+.filter-item input:focus,
+.filter-item select:focus {
+  border-color: #61c2e4 ;
+  outline: none;
+}
+
+.reset-btn {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+  background-color: rgb(217, 217, 217);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background-color:#61c2e4 ;
+}
+
+@media (min-width: 768px) {
+  .filter-container {
+    padding: 2em;
+  }
+
+  .filter-types-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .filter-item {
+    width: calc(50% - 1rem);
+  }
+}
